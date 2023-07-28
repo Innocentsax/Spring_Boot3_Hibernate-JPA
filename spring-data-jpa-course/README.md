@@ -1,6 +1,6 @@
 # Spring Boot 3 Hibernate/JPA
 
-<img src="https://github.com/Innocentsax/Spring_Boot3_Hibernate-JPA/blob/main/spring-data-jpa-course/JPA%20database.png">
+<img src="https://github.com/Innocentsax/Spring_Boot3_Hibernate-JPA/blob/main/spring-data-jpa-course/Sprintboot3JPA.png">
 
 - What is Spring Data JPA
 - Connect to a real database and not in memory DB
@@ -14,4 +14,4 @@
 - Transactions
 
 
-<img src="https://github.com/Innocentsax/Spring_Boot3_Hibernate-JPA/blob/main/spring-data-jpa-course/Sprintboot3JPA.png">
+<!--<img src="https://github.com/Innocentsax/Spring_Boot3_Hibernate-JPA/blob/main/spring-data-jpa-course/Sprintboot3JPA.png">-->
