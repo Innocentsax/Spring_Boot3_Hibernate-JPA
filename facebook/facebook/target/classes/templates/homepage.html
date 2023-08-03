@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="/css/homepage.css"/>
+  <title>Facebook</title>
+</head>
+<body>
+<header>
+  <div class="header-wrap">
+    <div class="header-logo">
+      <a href="/templates/login_page.html">
+        <img src="/images/facebook.png" alt="logo" class="main-logo" />
+      </a>
+    </div>
+  </div>
+  <div class="welcome_container">
+    <h1>Welcome <span th:text="${userLogin}"></span></h1>
+  </div>
+  <div class="home-text">
+    <h1>Connect with Friends &amp; Family</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex
+      voluptatum quod sit, animi voluptas architecto eaque unde enim est?
+    </p>
+  </div>
+  <div class="comment-pic">
+    <img src="/images/istockphoto-1364929981-612x612.jpeg" alt="" />
+  </div>
+  <div class="icon-section">
+    <i class="fa-solid fa-comments fa-bolds"></i>
+    <i class="fa-solid fa-heart fa-bolds"></i>
+    <i class="fa-solid fa-hand-holding-heart fa-bolds"></i>
+  </div>
+  <div class="input">
+    <label for="comment">Comment</label>
+    <input
+            type="text"
+            id="comment"
+            placeholder="write a comment"
+            required
+    />
+    <button onclick="displayComment()">Submit</button>
+  </div>
+  <div class="form-wrapper">
+    <form action="/path/to/Homepage" method="post" class="form-wrapper">
+      <label for="post">Post</label>
+      <textarea
+              name="update-post"
+              id="post"
+              cols="8"
+              rows="5"
+              placeholder="What's on your mind...?"
+      ></textarea>
+      <button type="submit" class="button">Update</button>
+    </form>
+  </div>
+
+  <!-- Display the comment here -->
+  <div id="displayedComment"></div>
+  <div id="displayedComments"></div>
+</header>
+
+<script>
+  function displayComment() {
+    const commentInput = document.getElementById("comment").value;
+    const commentDisplay = document.createElement("p");
+    commentDisplay.textContent = commentInput;
+
+    const displayContainer = document.getElementById("displayedComment");
+    const existingComments = displayContainer.innerHTML;
+
+    if (existingComments !== "") {
+      displayContainer.innerHTML += "<br>";
+    }
+
+    displayContainer.appendChild(commentDisplay);
+    document.getElementById("comment").value = "";
+  }
+</script>
+</body>
+</html>

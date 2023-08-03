@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet"  href="/css/register_page.css"/>
+</head>
+<body>
+<div class="logo-container">
+    <img src="/images/facebook_.png" alt="facebook logo" class="logo">
+</div>
+<div class="signup-form">
+    <h2>Sign up</h2>
+    <hr />
+    <form action="/register" method="post" th:object="${registerRequest}">
+        <div class="form-wrap">
+            <div class="form-group">
+                <!-- <label for="fullname">First Name</label> -->
+                <input
+                        type="text"
+                        id="fistName"
+                        placeholder="Login"
+                        required
+                        name="email"
+                />
+            </div>
+        </div>
+        <div class="form-group">
+            <!-- <label for="email">Email</label> -->
+            <input type="email" id="email" placeholder="Email" required name="login"/>
+        </div>
+        <div class="form-group">
+            <!-- <label for="password">Password</label> -->
+            <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                    name="password"
+            />
+        </div>
+        <button type="submit" value="login">Sign Up</button>
+    </form>
+    <div class="sign-in_wrapper">
+        <h3>Already have an account?</h3>
+        <span><a href="/" class="hooffer">Sign in</a></span>
+    </div>
+</div>
+</body>
+</html>

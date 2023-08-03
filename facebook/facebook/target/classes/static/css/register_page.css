@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+    background-color: #3177c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cabin", Courier, monospace;
+    height: 100vh;
+    margin: 0;
+    padding: 22px 0;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #1264bd;
+}
+
+.hooffer:hover {
+    text-decoration: underline;
+}
+
+.logo-container{
+    text-align: center;
+}
+
+.logo{
+    width: 108px;
+    margin: 37px;
+}
+
+.signup-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 350px;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group-birthday {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-wrap {
+    display: flex;
+    gap: 23px;
+}
+
+.adj-frm-grp {
+    width: 40%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.sign-in_wrapper h3 {
+    margin: 0;
+}
+
+.sign-in_wrapper {
+    display: flex;
+    margin: 7px 4px;
+}
+
+.sign-in_wrapper span {
+    margin: 3px 4px;
+}
+
+select {
+    margin-right: 6px;
+}
+
+.master-label {
+    display: flex;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1264bd;
+    transform: scale(1.05);
+}
+
+label input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Optional: Adjust the form layout for responsiveness */
+@media (max-width: 480px) {
+    .signup-form {
+        width: 100%;
+        max-width: 350px;
+    }
+}

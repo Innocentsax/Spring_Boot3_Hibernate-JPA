@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="/css/login.css" />
+  <title>Facebook</title>
+</head>
+<body>
+<header>
+  <div class="main">
+    <div class="left">
+      <img src="/images/facebook.png" alt="facebook" class="logo" />
+      <p>Connect with friends and the world around you on Facebook.</p>
+    </div>
+    <div class="right">
+      <form action="/login" method="post" th:object="${loginRequest}">
+        <div class="form_body">
+          <input type="text" placeholder="Login" name="login"/>
+          <input type="password" placeholder="password" name="password" />
+          <button>Log in</button>
+          <p>Forget password</p>
+          <hr />
+          <button class="create-btn">
+            <a href="/register"> Create new Account </a>
+          </button>
+        </div>
+      </form>
+      <p>
+        <span>Create a Page</span>
+        for a celebrity, brand or business.
+      </p>
+    </div>
+  </div>
+</header>
+</body>
+</html>
