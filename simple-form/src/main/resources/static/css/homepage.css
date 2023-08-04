@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/*
+body {
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", Courier, monospace;
+  height: 100vh;
+} */
+
+body {
+    font-family: "Cabin", Courier, monospace;
+    background: #0a4aa1;
+    color: #f3f3f3;
+}
+
+.home-text {
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.main-logo {
+    width: 200px;
+}
+
+.comment-pic {
+    margin: auto;
+    text-align: center;
+}
+
+.comment-pic img {
+    width: 60%;
+    border-radius: 14px;
+}
+
+.comment-section {
+    width: 65%;
+    background: #f3f3f3;
+    height: 328px;
+    margin: auto;
+    border-radius: 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.icon-section {
+    margin: 19px auto;
+    width: 70%;
+}
+
+.input {
+    width: 70%;
+    margin: 21px auto;
+}
+
+#displayedComment {
+    width: 70%;
+    margin: auto;
+}
+
+#displayedComment p {
+    margin: 0;
+}
+
+.fa-bolds {
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1264bd;
+    transform: scale(1.05);
+}
+
+.form-wrapper {
+    max-width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #0d55ff; */
+    border-radius: 19px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    border: none;
+    background: #d5dfff;
+}
+
+.button {
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #1465cf;
+}

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+* {
+    margin: 0;
+    padding: 3px 0;
+    box-sizing: border-box;
+    font-family: "Cabin", "Courier New", Courier, monospace;
+}
+
+body {
+    background-color: rgb(62 103 186);
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 333px;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* header .main {
+  position: absolute;
+  top: 25%;
+  width: 70%;
+  gap: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+} */
+
+.left {
+    margin: 0 auto;
+    width: 80%;
+    padding: 12px;
+    text-align: center;
+}
+
+/* header .main .right form {
+  width: 39px;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: -50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+} */
+
+body {
+    background-color: rgb(62 103 186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+.form {
+    margin: auto;
+    width: 80%;
+}
+
+.main {
+    display: block;
+}
+
+.form_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right p {
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-btn {
+    width: 60%;
+    background-color: #39a920;
+    transition: 0.4s;
+}
+
+.create-btn:hover {
+    background-color: #2d9415;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1264bd;
+}
+
+p {
+    margin-top: 10px;
+    color: #d0d0d0;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.create-account-btn {
+    background-color: #42b72a;
+}
+
+.create-account-btn:hover {
+    background-color: #39a920;
+}
+
+@media (min-width: 342px) {
+    .logo {
+        width: 242px;
+    }
+}
+
+@media (min-width: 1062px) {
+    .main {
+        display: flex;
+    }
+
+    .left {
+        width: 37%;
+    }
+    .form {
+        width: 100%;
+    }
+}
